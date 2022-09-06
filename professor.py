@@ -4,12 +4,12 @@ class Professor:
         self.nome = nome
         self.idade = idade
     
-    def salario(self):
+    def __salario(self):
         return 'R$ 1.500' 
         
     def tentando_acessar(self, pessoa):
         if pessoa == "Diretor" or pessoa == "Coordenador":
-            return self.salario()
+            return self.__salario()
         else:
             return "Você não tem permissão para acessar essa informação"
         
