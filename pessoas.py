@@ -1,4 +1,4 @@
-'''#exerc_1
+#exerc_1
 class Pessoa:
     def __init__(self, cpf, nome, idade, fumante):
         self.cpf = cpf
@@ -58,44 +58,8 @@ class PessoaJuridica(Pessoa):
         
 pj = PessoaJuridica('12123456000199', 'ArcoIris LTDA', '10', 'S')
 print(pj.empresa_nome())
-print(pj.atividade())'''
-
-#exerc_4
-
-'''class Professor: 
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-    
-    def salario(self):
-        return 'R$ 1.500' 
-        
-    def tentando_acessar(self, pessoa):
-        if pessoa == "Diretor" or pessoa == "Coordenador":
-            return self.salario()
-        else:
-            return "Você não tem permissão para acessar essa informação"
-        
-usuario = Professor('José', '15')
-acesso = usuario.tentando_acessar("Aluno")
-print(acesso)
-acesso = usuario.tentando_acessar("Diretor")
-print(acesso)'''
+print(pj.atividade())
 
 
-#exerc_5
 
 
-class Quadrado:
-    def __init__(self, lado):
-        self.lado = lado
-    
-    def area(self):
-        return self.lado ** 2
-        
-    def perimetro(self):
-        return 4 * self.lado
-    
-calculo = Quadrado(3)
-calculo.perimetro()
-calculo.area()

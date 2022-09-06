@@ -1,4 +1,4 @@
-from exerc_revisao import Quadrado
+from quadrado import Quadrado
 
 def main():
     calculo = Quadrado(3)
